@@ -1,9 +1,6 @@
 package use_cases
 
 import (
-	"net/http"
-	"os"
-
 	"github.com/go-playground/validator/v10"
 	"gitlab.com/ProtectIdentity/pugcha-backend/config"
 	"gitlab.com/ProtectIdentity/pugcha-backend/db/repositories"
@@ -11,6 +8,8 @@ import (
 	"gitlab.com/ProtectIdentity/pugcha-backend/models"
 	"gitlab.com/ProtectIdentity/pugcha-backend/service/serveBusiness"
 	"gitlab.com/ProtectIdentity/pugcha-backend/service/serveUtils"
+	"net/http"
+	"os"
 )
 
 func CreateBusinessOrchestrator(r *http.Request) (*models.BusinessProfile, error) {
@@ -48,7 +47,7 @@ func CreateBusinessOrchestrator(r *http.Request) (*models.BusinessProfile, error
 	go func() {
 		_, err = os.Stat(business.ID.String())
 		if os.IsNotExist(err) {
-			_ = os.MkdirAll(config.Configuration.File+business.ID.String(), 0755)
+			_ = os.MkdirAll(config.Configuration.File + business.ID.String(), 0755)
 			for _, v := range name {
 				_ = os.Rename("./static/"+v, config.Configuration.File+business.ID.String()+"/"+v)
 			}

@@ -18,9 +18,9 @@ type BusinessRepository interface {
 }
 
 type BusinessProfileRepository interface {
-	CreateProfile(*map[string]interface{}) error
 	FindById(uuid.UUID) (*json_serializer.FullBusinessResponse, error)
 	ListBusinessProfile() ([]*models.BusinessProfile, error)
+	CreateProfile(*map[string]interface{}) error
 	PatchProfile(uuid.UUID, *map[string]interface{}) error
 	DeleteProfile(uuid.UUID) error
 }

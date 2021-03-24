@@ -23,6 +23,7 @@ func SetupAdminRoutes(r *mux.Router, host string) {
 
 	front.Use(middleware.PanicRecover)
 	front.Use(middleware.LogEachRequest)
+	//front.Use(middleware.GzipMiddleware)
 }
 
 
