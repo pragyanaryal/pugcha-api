@@ -1,0 +1,29 @@
+{
+  "database": {
+    "dbname": "postgres",
+    "dbuser": "postgres",
+    "dbpassword": "9pcs0iu4fFo=",
+    "dbport": "5432",
+    "dbhost": "pugcha-mumbai.cihcksrll6ky.ap-south-1.rds.amazonaws.com"
+  },
+
+  "serverPort": ":3000",
+  "logLevel": "DEBUG",
+
+  "gmail_user": "pugcha.backend@gmail.com",
+  "gmail_password": "Pugcha111!",
+
+  "access_key": "KoTYY2DDOLjh/IvApUH4cR+wt5rLdcGveEBrwSo75CJg+579rf2whgh/M3N6Pugqy+C6cA0Loh2o8RI5cpw89A==",
+  "refresh_key": "XX7P/+XaPNX5JklESj1LihxUIat7Yq/L50Cz+VOLcewUSpGNGoqyWwkwbUCRXAMFyCAF+yL1hRPMO23juguXOg==",
+
+  "google_client_id": "800855838162-sq1m6eie3u3es14e69p0q4ic9l2csu5m.apps.googleusercontent.com",
+  "google_secret": "VOJ4HIOrRXnts5I2DKc-xVdB",
+
+  "facebook_secret": "5ca4d99434a379c7cc9a87e59602f1af",
+  "facebook_appid": "715666289029090",
+
+  "contents": "http://dev.api.pugcha.com:3000/contents/",
+  "contents_https": "https://dev.api.pugcha.com/contents/",
+
+  "frontend_url": "http://pugcha.netlify.app/verify-email/"
+}

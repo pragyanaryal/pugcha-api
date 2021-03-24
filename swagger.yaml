@@ -1,0 +1,32 @@
+basePath: /user
+consumes:
+  - application/json
+info:
+  description: Documenting for Users API
+  title: of Users API
+  version: 1.0.0
+paths:
+  /user:
+    get:
+      description: Returns a list of users
+      operationId: listUsers
+      responses:
+        "200":
+          $ref: '#/responses/usersResponse'
+      tags:
+        - Users
+  /user/:id:
+    get:
+      description: Returns a single user
+      operationId: listUser
+      responses:
+        "200":
+          $ref: '#/responses/userResponse'
+      tags:
+        - Users
+produces:
+  - application/json
+schemes:
+  - http
+  - https
+swagger: "2.0"

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="ec2-13-233-77-211.ap-south-1.compute.amazonaws.com" id="37d0bfd5-24df-4ed9-93db-c80c39d8361b" keyPath="$USER_HOME$/Documents/Certfile/pugchaBackend.pem" port="22" customName="aws-ec2" nameFormat="CUSTOM" username="centos">
+        <option name="customName" value="aws-ec2" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

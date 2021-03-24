@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a5989160-5924-4406-b0a1-3f2a87539388" name="final-pugcha-mumbai-ec2" url="">
+        <fileTransfer rootFolder="/home/centos/pugcha-backend" accessType="SFTP" host="ec2-13-233-77-211.ap-south-1.compute.amazonaws.com" port="22" sshConfigId="37d0bfd5-24df-4ed9-93db-c80c39d8361b" sshConfig="aws-ec2" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
