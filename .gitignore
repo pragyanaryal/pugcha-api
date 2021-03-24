@@ -32,3 +32,4 @@ pugcha-backend.iml
 MockScript/__pycache__/
 permissions/
 MockScript/
+.idea/
