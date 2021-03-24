@@ -39,3 +39,5 @@ MockScript/
 static/production/
 static/development/
 static/
+!/static/Logo_p.png
+!/static/LogoP.png
