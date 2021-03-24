@@ -37,4 +37,4 @@ MockScript/
 /.vscode/
 static/production/
 static/development/
-static/*
+static/**
