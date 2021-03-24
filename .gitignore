@@ -36,4 +36,5 @@ MockScript/
 .vscode/**
 /.idea/
 /.vscode/
-static/**
+static/production/
+static/development/
