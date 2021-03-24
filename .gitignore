@@ -34,3 +34,5 @@ permissions/
 MockScript/
 .idea/**
 .vscode/**
+/.idea/
+/.vscode/
