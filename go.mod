@@ -3,18 +3,13 @@ module gitlab.com/ProtectIdentity/pugcha-backend
 go 1.15
 
 require (
-	github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d // indirect
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/brianvoe/gofakeit/v5 v5.10.1
-	github.com/cjbassi/drawille-go v0.1.0 // indirect
 	github.com/danhper/structomap v0.6.2
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
-	github.com/distatus/battery v0.10.0 // indirect
 	github.com/elgris/sqrl v0.0.0-20190909141434-5a439265eeec
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/georgysavva/scany v0.2.5
-	github.com/gizak/termui/v3 v3.1.0 // indirect
-	github.com/go-ole/go-ole v1.2.4 // indirect
 	github.com/go-openapi/spec v0.19.12 // indirect
 	github.com/go-playground/form v3.1.4+incompatible
 	github.com/go-playground/validator/v10 v10.4.0
@@ -29,22 +24,17 @@ require (
 	github.com/mailru/easyjson v0.7.6 // indirect
 	github.com/matcornic/hermes/v2 v2.1.0
 	github.com/mattn/go-runewidth v0.0.9 // indirect
-	github.com/mitchellh/go-wordwrap v1.0.1 // indirect
 	github.com/mitchellh/mapstructure v1.3.3
-	github.com/nsf/termbox-go v0.0.0-20201124104050-ed494de23a00 // indirect
-	github.com/rs/cors v1.7.0 // indirect
 	github.com/rs/zerolog v1.20.0
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/sethvargo/go-password v0.2.0
-	github.com/shirou/gopsutil v3.20.11+incompatible // indirect
 	github.com/swaggo/swag v1.6.9
-	github.com/xxxserxxx/gotop v0.0.0-20200228201131-d16cf1c6d2b9 // indirect
 	golang.org/x/crypto v0.0.0-20201012173705-84dcc777aaee
 	golang.org/x/net v0.0.0-20201110031124-69a78807bb2b // indirect
 	golang.org/x/oauth2 v0.0.0-20200902213428-5d25da1a8d43
 	golang.org/x/sys v0.0.0-20201201145000-ef89a241ccb3 // indirect
 	golang.org/x/text v0.3.4 // indirect
 	golang.org/x/tools v0.0.0-20201110201400-7099162a900a // indirect
+	gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20200615113413-eeeca48fe776 // indirect
-	howett.net/plist v0.0.0-20201026045517-117a925f2150 // indirect
 )

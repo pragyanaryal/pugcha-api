@@ -37,6 +37,4 @@ MockScript/
 /.vscode/
 static/production/
 static/development/
-!/static/Logo_p.png
-!/static/LogoP.png
 static/
