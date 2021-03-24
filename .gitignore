@@ -20,7 +20,6 @@
 .idea/.name
 .idea/misc.xml
 .idea/modules.xml
-go.sum
 pugcha-backend.iml
 .idea/codeStyles/
 .idea/dataSources.xml
@@ -38,6 +37,6 @@ MockScript/
 /.vscode/
 static/production/
 static/development/
-static/
 !/static/Logo_p.png
 !/static/LogoP.png
+static/
