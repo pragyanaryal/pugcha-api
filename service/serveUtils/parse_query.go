@@ -2,12 +2,11 @@ package serveUtils
 
 import (
 	"encoding/json"
-	"net/http"
-	"regexp"
-
 	"github.com/go-playground/form"
 	"github.com/google/uuid"
 	"gitlab.com/ProtectIdentity/pugcha-backend/serializer/json_serializer"
+	"net/http"
+	"regexp"
 )
 
 var (
@@ -201,7 +200,6 @@ func ToSQL(params *json_serializer.FilterRequest, kind string) *SQLFilter {
 
 	return &sql
 }
-
 func UserFilterToSql(params map[string]*json_serializer.Field) (map[string]string, map[string][]interface{}, []string, string) {
 	filter := map[string]string{}
 	args := map[string][]interface{}{}
