@@ -35,10 +35,7 @@ MockScript/
 .idea/**
 .vscode/**
 /.idea/
-<<<<<<< HEAD
-/.vscode/
-=======
 /.vscode/
 static/production/
 static/development/
->>>>>>> 625a36aa5e577afc44c345c8e2cb97cd2ada83c9
+static/
