@@ -2,11 +2,11 @@ package router
 
 import (
 	"github.com/gorilla/mux"
-	"gitlab.com/ProtectIdentity/pugcha-backend/controllers"
+	"gitlab.com/ProtectIdentity/pugcha-backend/handlers"
 	"net/http"
 )
 
-var address = controllers.NewAddress()
+var address = handlers.NewAddress()
 
 
 func SetupAddressRoutes(r *mux.Router) {

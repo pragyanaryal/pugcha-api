@@ -2,11 +2,12 @@ package serveUtils
 
 import (
 	"encoding/json"
+	"net/http"
+	"regexp"
+
 	"github.com/go-playground/form"
 	"github.com/google/uuid"
 	"gitlab.com/ProtectIdentity/pugcha-backend/serializer/json_serializer"
-	"net/http"
-	"regexp"
 )
 
 var (

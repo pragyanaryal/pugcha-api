@@ -103,7 +103,6 @@ func (user *userRepo) PatchUser(id uuid.UUID, patch *map[string]interface{}) err
 		delete(*patch, "password")
 	}
 	if _, ok := (*patch)["updated_on"]; ok {
-		//temp["password"] = val
 		delete(*patch, "updated_on")
 	}
 

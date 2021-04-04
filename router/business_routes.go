@@ -2,11 +2,11 @@ package router
 
 import (
 	"github.com/gorilla/mux"
-	"gitlab.com/ProtectIdentity/pugcha-backend/controllers"
+	"gitlab.com/ProtectIdentity/pugcha-backend/handlers"
 	"net/http"
 )
 
-var business = controllers.NewBusinessHandler()
+var business = handlers.NewBusinessHandler()
 
 func SetupBusinessRoutes(r *mux.Router) {
 

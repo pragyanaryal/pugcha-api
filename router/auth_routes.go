@@ -2,11 +2,11 @@ package router
 
 import (
 	"github.com/gorilla/mux"
-	"gitlab.com/ProtectIdentity/pugcha-backend/controllers"
+	"gitlab.com/ProtectIdentity/pugcha-backend/handlers"
 	"net/http"
 )
 
-var auth = controllers.NewAuth()
+var auth = handlers.NewAuth()
 
 func SetupAuthRoutes(r *mux.Router) {
 	// Regular Routes

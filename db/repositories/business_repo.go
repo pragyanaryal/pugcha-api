@@ -3,6 +3,9 @@ package repositories
 import (
 	"context"
 	"errors"
+	"strings"
+	"time"
+
 	"github.com/danhper/structomap"
 	"github.com/elgris/sqrl"
 	"github.com/georgysavva/scany/pgxscan"
@@ -13,8 +16,6 @@ import (
 	"gitlab.com/ProtectIdentity/pugcha-backend/models"
 	"gitlab.com/ProtectIdentity/pugcha-backend/serializer/json_serializer"
 	"gitlab.com/ProtectIdentity/pugcha-backend/service/serveUtils"
-	"strings"
-	"time"
 )
 
 var BusinessRepo = &businessRepo{}
@@ -83,7 +84,6 @@ func (businesses *businessRepo) ListBusiness(params *serveUtils.SQLFilter) (*[]i
 		for i, v := range business {
 			y[i] = v
 		}
-
 		return &y, nil
 	}
 
@@ -178,7 +178,6 @@ func (businesses *businessRepo) BatchDeleteAddress(id []uuid.UUID) error {
 	return nil
 }
 
-
 func (businesses *businessRepo) PatchBusiness(id uuid.UUID, patch *map[string]interface{}) error {
 	// Separating 3 tables, opening hours, owner and address
 	var openingHours []models.OpeningHours
@@ -247,7 +246,7 @@ func (businesses *businessRepo) PatchBusiness(id uuid.UUID, patch *map[string]in
 		for _, val := range address {
 			addMap := structomap.New().UseSnakeCase().PickAll().Transform(val)
 			sql, arg, err := sqrl.Insert("addresses").SetMap(addMap).
-				Suffix("ON CONFLICT (id) DO UPDATE SET " +
+				Suffix("ON CONFLICT (id) DO UPDATE SET "+
 					"business_id = ?, street = ?, ward = ?, municipality = ?, district = ?, state = ?, country = ?, contact = ?",
 					val.BusinessId, val.Street, val.Ward, val.Municipality, val.District, val.State, val.Country, val.Contact).
 				PlaceholderFormat(sqrl.Dollar).ToSql()

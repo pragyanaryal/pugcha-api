@@ -21,7 +21,7 @@ SELECT b.user_id,
        bp.established_date,
        bp.description,
        bp.geom,
-       jsonb_agg(DISTINCT a2) as address,
+       case when count(a2) = 0 then '[{}]' else jsonb_agg(DISTINCT a2) end as address,
        jsonb_agg(DISTINCT oi) as owners,
        jsonb_agg(DISTINCT ot) as opening
 FROM businesses b

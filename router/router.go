@@ -22,6 +22,7 @@ func New() http.Handler {
 	SetupCategoryRoutes(s)
 	SetupBusinessRoutes(s)
 	SetupAddressRoutes(s)
+	SetupSearchRoutes(s)
 	SetupFileRoutes(s, config.Configuration.File, config.Configuration.Host)
 
 	s.Use(middleware.PanicRecover)
